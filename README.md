@@ -1,2 +1,2 @@
-# CTGAN-based Synthetic Heart Disease Data Generation and Evaluation
+### CTGAN-based Synthetic Heart Disease Data Generation and Evaluation
 
