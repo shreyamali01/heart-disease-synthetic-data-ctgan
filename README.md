@@ -71,6 +71,28 @@ The evaluation highlights important trade-offs between data utility, privacy pre
 
 ---
 
+## Observation
+
+- The log-scale comparison of feature-wise means and standard deviations shows that most synthetic features lie close to the diagonal, indicating strong agreement between real and synthetic data statistics. This suggests that CTGAN successfully captures the first- and second-order moments of the original data distribution.
+
+![Mean and Std Comparison](results/mean_and_std.png)
+
+- For continuous variables such as age, trestbps, chol, and thalach, the cumulative distribution functions (CDFs) of synthetic data closely follow those of the real data. Minor deviations are observed in the tails, which is expected given the limited size of the original dataset.
+
+!(results/cummulative_sums.png)
+
+!(results/distribution.png)
+
+- The correlation structure of the synthetic dataset closely resembles that of the real dataset,
+suggesting that inter-feature dependencies are largely preserved. Minor attenuation of strong
+correlations is observed, reflecting a trade-off between realism and privacy preservation.
+
+!(results/distribution2.png)
+
+****
+
+---
+
 ## Results
 
 - Synthetic data closely matches real data distributions across most features  
